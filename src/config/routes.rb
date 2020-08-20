@@ -53,4 +53,14 @@ Rails.application.routes.draw do
       get 'other-charts', to: 'datapresentation#otherCharts'
     end
   end
+
+  resources :additionalpages, only: [] do
+    collection do
+      get 'e-commerce', to: 'additionalpages#ecommerce'
+      get 'projects', to: 'additionalpages#projects'
+      get 'project-detail', to: 'additionalpages#projectDetail'
+      get 'contacts', to: 'additionalpages#contacts'
+      get 'profile', to: 'additionalpages#profile'
+    end
+  end
 end
