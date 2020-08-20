@@ -10,5 +10,38 @@ Rails.application.routes.draw do
       get 'dashboard2', to: 'home#dashboard2'
       get 'dashboard3', to: 'home#dashboard3'
     end
+  end 
+
+  resources :forms, only: [] do
+    collection do
+      get 'general-form', to: 'forms#generalForm'
+      get 'advanced-components', to: 'forms#advancedComponents'
+      get 'form-validation', to: 'forms#formValidation'
+      get 'form-wizard', to: 'forms#formWizard'
+      get 'form-upload', to: 'forms#formUpload'
+      get 'form-buttons', to: 'forms#formButtons'
+    end
   end
+
+  resources :uielements, only: [] do
+    collection do
+      get 'general-elements', to: 'uielements#generalElements'
+      get 'media-gallery', to: 'uielements#mediaGallery'
+      get 'typography', to: 'uielements#typography'
+      get 'icons', to: 'uielements#icons'
+      get 'glyphicons', to: 'uielements#glyphicons'
+      get 'widgets', to: 'uielements#widgets'
+      get 'invoice', to: 'uielements#invoice'
+      get 'inbox', to: 'uielements#inbox'
+      get 'calendar', to: 'uielements#calendar'
+    end
+  end
+
+  resources :tables, only: [] do
+    collection do
+      get 'tables', to: 'tables#tables'
+      get 'table-dynamic', to: 'tables#tableDynamic'
+    end
+  end
+
 end
