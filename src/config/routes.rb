@@ -44,4 +44,13 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :datapresentation, only: [] do
+    collection do
+      get 'chart-js', to: 'datapresentation#chartJs'
+      get 'chart-js2', to: 'datapresentation#chartJs2'
+      get 'morris-js', to: 'datapresentation#morrisJs'
+      get 'echarts', to: 'datapresentation#eCharts'
+      get 'other-charts', to: 'datapresentation#otherCharts'
+    end
+  end
 end

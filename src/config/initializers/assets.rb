@@ -73,6 +73,7 @@ Rails.application.config.assets.precompile += %w( curvedLines.js )
 Rails.application.config.assets.precompile += %w( build/date.js )
 Rails.application.config.assets.precompile += %w( dist/jquery.vmap.js )
 Rails.application.config.assets.precompile += %w( dist/maps/jquery.vmap.world.js )
+Rails.application.config.assets.precompile += %w( dist/maps/jquery.vmap.usa.js )
 Rails.application.config.assets.precompile += %w( examples/js/jquery.vmap.sampledata.js )
 Rails.application.config.assets.precompile += %w( min/moment.min.js )
 Rails.application.config.assets.precompile += %w( daterangepicker.js )
@@ -120,6 +121,8 @@ Rails.application.config.assets.precompile += %w( js/dataTables.scroller.min.js 
 Rails.application.config.assets.precompile += %w( dist/jszip.min.js )
 Rails.application.config.assets.precompile += %w( build/pdfmake.min.js )
 Rails.application.config.assets.precompile += %w( build/vfs_fonts.js )
+Rails.application.config.assets.precompile += %w( dist/echarts.min.js )
+Rails.application.config.assets.precompile += %w( map/js/world.js )
 
 # Fuentes
 Rails.application.config.assets.paths << Rails.root.join("app", "assets", "fonts")
