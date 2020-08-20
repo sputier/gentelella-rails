@@ -63,4 +63,15 @@ Rails.application.routes.draw do
       get 'profile', to: 'additionalpages#profile'
     end
   end
+
+  resources :extras, only: [] do
+    collection do
+      get 'error403', to: 'extras#error403'
+      get 'error404', to: 'extras#error404'
+      get 'error500', to: 'extras#error500'
+      get 'plain', to: 'extras#plainPage'
+      get 'login', to: 'extras#loginPage'
+      get 'pricing', to: 'extras#pricingPage'
+    end
+  end
 end

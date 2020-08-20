@@ -48,6 +48,7 @@ Rails.application.config.assets.precompile += %w( css/buttons.bootstrap.min.css 
 Rails.application.config.assets.precompile += %w( css/fixedHeader.bootstrap.min.css )
 Rails.application.config.assets.precompile += %w( css/responsive.bootstrap.min.css )
 Rails.application.config.assets.precompile += %w( css/scroller.bootstrap.min.css )
+Rails.application.config.assets.precompile += %w( animate.min.css )
 
 # JS
 Rails.application.config.assets.precompile += %w( dist/jquery.min.js )
